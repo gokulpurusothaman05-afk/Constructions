@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <link rel="icon" type="image/webp" href="images/logo-white.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo-black.webp" alt="Stackly Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-primary btn-sm">Portal Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn btn-primary btn-block">Client / Admin Portal</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: Editorial Hero -->
+    <section class="section hero-editorial" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag animate-hero-tag">Design &amp; Build General Contractor &bull; India</span>
+          <h1 class="animate-hero-title">Architecture &amp; construction, delivered as one.</h1>
+          <p class="hero-subtitle animate-hero-subtitle">
+            We engineer bespoke residences, luxury estates, and commercial landmarks across Mumbai, Bengaluru, Delhi NCR, and Hyderabad as one continuous thought.
+          </p>
+          <div class="hero-actions animate-hero-actions">
+            <a href="projects.html" class="btn btn-primary">Explore Portfolio</a>
+            <a href="contact.html" class="btn btn-secondary">Request Consultation</a>
+          </div>
+          <div class="hero-stats-bar animate-hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">18+</div>
+              <div class="stat-label">Years of Mastery</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">140+</div>
+              <div class="stat-label">Landmark Builds</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">₹1,500 Cr+</div>
+              <div class="stat-label">Portfolio Built</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-hero-visual">
+          <div class="hero-image-wrap">
+            <img src="images/hero-construction.webp" alt="Stackly Master Architectural Build India">
+          </div>
+          <div class="hero-badge-float">
+            <span class="badge-title">Flagship Commercial Build 2026</span>
+            <span class="badge-detail">Vertex Tower &bull; Cyber City, Gurugram</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Studio Philosophy & Standards -->
+    <section class="section section-stone" id="philosophy">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Our Guiding Tenets</span>
+          <h2 class="section-title">Structures shaped by Indian terrain, built for generations.</h2>
+          <p class="section-desc">
+            At Stackly, we reject the division between architect and builder. Our integrated engineering methodology guarantees that structural integrity meets uncompromising design.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card reveal stagger-1">
+            <div class="card-num">01</div>
+            <h3>Structural Precision</h3>
+            <p>Every foundation and framing assembly is modeled in 3D BIM, exceeding National Building Code (NBC 2016) and seismic zone standards with millimeter accuracy.</p>
+          </div>
+          <div class="feature-card reveal stagger-2">
+            <div class="card-num">02</div>
+            <h3>Material Honesty</h3>
+            <p>We source authentic architectural concrete, structural mass timber, and thermal glazing engineered specifically for Indian monsoon and climatic resilience.</p>
+          </div>
+          <div class="feature-card reveal stagger-3">
+            <div class="card-num">03</div>
+            <h3>Transparent Delivery</h3>
+            <p>Real-time digital client dashboard tracking, milestone escrow draw invoices, and daily on-site log reporting for complete financial transparency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Featured Works Showcase -->
+    <section class="section" id="featured-projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Landmark projects defined by craft and technical mastery.</h2>
+          <p class="section-desc">A curated selection of recently commissioned residential estates and corporate towers across India.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <!-- Project 1 -->
+          <div class="project-card reveal stagger-1">
+            <div class="project-thumb">
+              <img src="images/project-1.webp" alt="The Obsidian Pavilion Residence, Bandra West">
+              <span class="project-meta-pill">Residential</span>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Custom Villa &bull; Mumbai</div>
+              <h3 class="project-title">The Obsidian Pavilion</h3>
+              <p>Cantilevered steel and exposed cast-in-place board-formed architectural concrete perched over coastal terrain.</p>
+              <div class="project-specs">
+                <span>6,400 sq.ft</span>
+                <span>Bandra West, Mumbai</span>
+                <span>₹35.5 Cr</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card reveal stagger-2">
+            <div class="project-thumb">
+              <img src="images/project-2.webp" alt="Stone Ridge Modern Residence, Jubilee Hills">
+              <span class="project-meta-pill">Residential</span>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Hillside Estate &bull; Hyderabad</div>
+              <h3 class="project-title">Stone Ridge Residence</h3>
+              <p>Locally quarried Deccan granite paired with triple-glazed acoustic curtain walls and radiant geothermal cooling.</p>
+              <div class="project-specs">
+                <span>8,200 sq.ft</span>
+                <span>Jubilee Hills, Hyderabad</span>
+                <span>₹68.0 Cr</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card reveal stagger-3">
+            <div class="project-thumb">
+              <img src="images/project-3.webp" alt="Vertex Commercial Tower, Gurugram">
+              <span class="project-meta-pill">Commercial</span>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Corporate Office &bull; NCR</div>
+              <h3 class="project-title">Vertex Commercial Center</h3>
+              <p>Twelve stories of post-tensioned concrete and smart solar-responsive kinetic facade engineering.</p>
+              <div class="project-specs">
+                <span>124,000 sq.ft</span>
+                <span>Cyber City, Gurugram</span>
+                <span>₹1,020 Cr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;" class="reveal">
+          <a href="projects.html" class="btn btn-secondary">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Comprehensive Disciplines -->
+    <section class="section section-dark" id="disciplines">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title" style="color: #ffffff;">Four specialized divisions under one master builder umbrella.</h2>
+          <p class="section-desc">From ground-up commercial structures to historical preservation, Stackly brings focused discipline to every phase.</p>
+        </div>
+
+        <div class="cards-grid-4">
+          <div class="feature-card reveal stagger-1" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">01</div>
+            <h3 style="color: #fff;">General Contracting</h3>
+            <p style="color: var(--text-light-muted);">Turnkey construction management, trade coordination, procurement, and safety oversight.</p>
+          </div>
+          <div class="feature-card reveal stagger-2" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">02</div>
+            <h3 style="color: #fff;">Structural Engineering</h3>
+            <p style="color: var(--text-light-muted);">Deep geotechnical foundations, seismic retrofits, steel fabrication, and structural load analysis.</p>
+          </div>
+          <div class="feature-card reveal stagger-3" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">03</div>
+            <h3 style="color: #fff;">Architectural Concrete</h3>
+            <p style="color: var(--text-light-muted);">Board-formed facades, board finishes, polished industrial slabs, and architectural walls.</p>
+          </div>
+          <div class="feature-card reveal stagger-4" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">04</div>
+            <h3 style="color: #fff;">Heritage Restoration</h3>
+            <p style="color: var(--text-light-muted);">Restoration of heritage stone masonry, timber rafters, and sensitive colonial/art-deco adaptations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Phased Construction Methodology -->
+    <section class="section" id="methodology">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Construction Lifecycle</span>
+          <h2 class="section-title">From initial site survey to keys in your hand.</h2>
+          <p class="section-desc">A structured 5-stage project delivery roadmap engineered to eliminate surprises and cost overruns.</p>
+        </div>
+
+        <div class="process-track">
+          <div class="process-step reveal stagger-1">
+            <div class="step-index">01</div>
+            <h4>Site &amp; Geotech</h4>
+            <p>Soil testing, topographic scans, environmental reviews, and site feasibility analysis.</p>
+          </div>
+          <div class="process-step reveal stagger-2">
+            <div class="step-index">02</div>
+            <h4>Engineering &amp; Permits</h4>
+            <p>3D BIM structural drawings, municipal authority filings, and RERA/fire permit expediting.</p>
+          </div>
+          <div class="process-step reveal stagger-3">
+            <div class="step-index">03</div>
+            <h4>Groundwork &amp; Core</h4>
+            <p>Excavation, grading, deep pilings, and foundation structural concrete pours.</p>
+          </div>
+          <div class="process-step reveal stagger-4">
+            <div class="step-index">04</div>
+            <h4>Superstructure</h4>
+            <p>Framing, mechanical, electrical, plumbing rough-in, and weather-tight building envelope.</p>
+          </div>
+          <div class="process-step reveal stagger-5">
+            <div class="step-index">05</div>
+            <h4>Commissioning</h4>
+            <p>Finishes, acoustic testing, HVAC commissioning, and formal handover package.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Client Testimonials & Reviews -->
+    <section class="section section-stone" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Client Voices</span>
+          <h2 class="section-title">Judged by the clients who live and work within our spaces.</h2>
+          <p class="section-desc">Uncompromising feedback from property developers, architects, and private estate owners across India.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="testimonial-card reveal stagger-1">
+            <p class="testimonial-quote">"Stackly approached our Bandra hillside build not just as contractors, but as engineering partners. The level of architectural concrete craftsmanship is unmatched in India."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/client-avatar.webp" alt="Kavita Singhania">
+              </div>
+              <div class="author-info">
+                <h5>Kavita Singhania</h5>
+                <p>Owner, Obsidian Pavilion, Mumbai</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal stagger-2">
+            <p class="testimonial-quote">"Delivered our twelve-story Cyber City corporate headquarters four weeks ahead of schedule with zero safety incidents. The live telemetry portal made tracking effortless."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/admin-avatar.webp" alt="Julian Mehta">
+              </div>
+              <div class="author-info">
+                <h5>Julian Mehta</h5>
+                <p>Managing Director, Apex Infra, Gurugram</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal stagger-3">
+            <p class="testimonial-quote">"Their historic masonry restoration on our colonial Bengaluru warehouse preserved every stone detail while modernizing structural seismic resistance to Zone III standards."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="images/team-2.webp" alt="Rajesh Varma">
+              </div>
+              <div class="author-info">
+                <h5>Rajesh Varma</h5>
+                <p>Principal Architect, Studio Forma, Bengaluru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Initiate a Build Consultation CTA -->
+    <section class="section" id="cta-consultation">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-banner-content">
+            <span class="section-tag" style="color: var(--color-accent);">Start Your Build</span>
+            <h2>Have a site, a blueprint, or a vision? Let’s construct it.</h2>
+            <p>Our senior construction engineers and project estimators are ready to evaluate your site and provide a comprehensive feasibility study.</p>
+            
+            <!-- Quick Inquiry Form: redirects to 404 per user requirement -->
+            <form action="404.html" method="GET" class="cta-quick-form">
+              <input type="text" name="quick_location" placeholder="Project City / State (e.g. Mumbai, Bengaluru)" class="form-control" required>
+              <input type="email" name="quick_email" placeholder="Your Email Address" class="form-control" required>
+              <button type="submit" class="btn btn-accent">Request Site Feasibility</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+          <img src="images/logo-white.webp" alt="Stackly Logo" class="brand-logo-img">
+          <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+        </a>
+          <p class="footer-desc">
+            Stackly is India’s premier design-build architectural construction studio. We engineer and build luxury residences, commercial towers, and cultural spaces with precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Capabilities</div>
+          <ul class="footer-links">
+            <li><a href="404.html">General Contracting</a></li>
+            <li><a href="404.html">Structural Engineering</a></li>
+            <li><a href="404.html">Architectural Concrete</a></li>
+            <li><a href="404.html">Historic Preservation</a></li>
+            <li><a href="404.html">BIM Modeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="footer-heading">India Headquarters</div>
+          <p>450 Maker Maxity, Bandra-Kurla Complex (BKC), Mumbai - 400051</p>
+          <p>Tel: <a href="404.html">+91 (022) 6940 7800</a></p>
+          <p>Email: <a href="404.html">studio@stacklybuild.in</a></p>
+          <div style="margin-top: 1.25rem;">
+            <a href="login.html" class="btn btn-outline-light btn-sm">Client &amp; Admin Portal &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Construction &amp; Architecture India. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">NBC 2016 Compliant</a>
+          <a href="404.html">IGBC Platinum</a>
+          <a href="404.html">RERA Registered</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

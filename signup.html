@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <link rel="icon" type="image/webp" href="images/logo-white.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo-black.webp" alt="Stackly Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-primary btn-sm">Portal Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn btn-primary btn-block">Client / Admin Portal</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container auth-wrapper">
+      <div class="auth-card animate-hero-visual">
+        <div class="auth-header">
+          <span class="section-tag">Account Registration &bull; India</span>
+          <h1>Create Your Portal Account</h1>
+          <p>Register as a Project Client or Stackly Superintendent</p>
+        </div>
+
+        <form id="signup-form">
+          <div class="form-group">
+            <label class="form-label" for="signup-name">Full Name (Optional)</label>
+            <input 
+              type="text" 
+              id="signup-name" 
+              class="form-control" 
+              placeholder="e.g. Kavita Singhania (or leave blank to auto-use Gmail)"
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-email">Gmail or Work Email</label>
+            <input 
+              type="email" 
+              id="signup-email" 
+              class="form-control" 
+              placeholder="e.g. kavita.singhania@gmail.com" 
+              required
+            >
+            <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-top: 0.35rem;">
+              Dashboard username is automatically parsed from your Gmail address.
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-role">Portal Access Tier</label>
+            <select id="signup-role" class="form-control" required>
+              <option value="client">Client Project Portal (Owner / Investor)</option>
+              <option value="admin">Admin Portal (Superintendent / Engineer)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-password">Create Password</label>
+            <input 
+              type="password" 
+              id="signup-password" 
+              class="form-control" 
+              placeholder="At least 8 characters" 
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="signup-confirm-password">Confirm Password</label>
+            <input 
+              type="password" 
+              id="signup-confirm-password" 
+              class="form-control" 
+              placeholder="Repeat your password" 
+              required
+            >
+          </div>
+
+          <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 1.5rem;">
+            <input type="checkbox" id="terms-agree" style="margin-top: 4px;" required>
+            <label for="terms-agree" style="font-size: 0.8125rem; color: var(--text-muted);">
+              I agree to the Stackly <a href="404.html" style="text-decoration: underline;">Terms of Engineering Service</a> and jobsite privacy protocols.
+            </label>
+          </div>
+
+          <button type="submit" id="signup-submit-btn" class="btn btn-primary btn-block">
+            Register &amp; Access Dashboard
+          </button>
+        </form>
+
+        <div class="auth-footer">
+          Already have credentials? <a href="login.html">Sign In Here</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+          <img src="images/logo-white.webp" alt="Stackly Logo" class="brand-logo-img">
+          <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+        </a>
+          <p class="footer-desc">
+            Stackly is India’s premier design-build architectural construction studio. We engineer and build luxury residences, commercial towers, and cultural spaces with precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Capabilities</div>
+          <ul class="footer-links">
+            <li><a href="404.html">General Contracting</a></li>
+            <li><a href="404.html">Structural Engineering</a></li>
+            <li><a href="404.html">Architectural Concrete</a></li>
+            <li><a href="404.html">Historic Preservation</a></li>
+            <li><a href="404.html">BIM Modeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="footer-heading">India Headquarters</div>
+          <p>450 Maker Maxity, Bandra-Kurla Complex (BKC), Mumbai - 400051</p>
+          <p>Tel: <a href="404.html">+91 (022) 6940 7800</a></p>
+          <p>Email: <a href="404.html">studio@stacklybuild.in</a></p>
+          <div style="margin-top: 1.25rem;">
+            <a href="login.html" class="btn btn-outline-light btn-sm">Client &amp; Admin Portal &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Construction &amp; Architecture India. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">NBC 2016 Compliant</a>
+          <a href="404.html">IGBC Platinum</a>
+          <a href="404.html">RERA Registered</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

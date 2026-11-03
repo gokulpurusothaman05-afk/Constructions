@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <link rel="icon" type="image/webp" href="images/logo-white.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo-black.webp" alt="Stackly Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-secondary btn-sm btn-logout">Admin Sign Out</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="btn btn-secondary btn-block btn-logout">Admin Sign Out</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Admin Welcome Banner -->
+    <section class="dashboard-header-banner">
+      <div class="container dash-welcome">
+        <div class="dash-user-meta">
+          <div class="dash-avatar" style="border-color: #ffffff;">
+            <img src="images/admin-avatar.webp" alt="Admin Profile">
+          </div>
+          <div class="dash-user-info">
+            <h2>Operations Center — <span class="user-display-name">Rajesh Varma</span></h2>
+            <p>
+              Authenticated Gmail: <strong class="user-display-email">rajesh.admin@gmail.com</strong>
+              <span class="dash-role-tag" style="background-color: #d32f2f;">ADMIN SUPERINTENDENT</span>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <a href="404.html" class="btn btn-outline-light btn-sm redirect-404">New Project Dispatch</a>
+          <a href="login.html" class="btn btn-secondary btn-sm btn-logout" style="color: #fff; border-color: rgba(255,255,255,0.4); margin-left: 0.5rem;">Log Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin Content -->
+    <div class="container" style="padding-top: 2rem;">
+      <!-- Operations Stats -->
+      <div class="dash-grid-stats">
+        <div class="stat-card-dash">
+          <div class="label">Active Construction Sites</div>
+          <div class="val">12</div>
+          <div class="sub">100% On-Track / 0 Critical Holds</div>
+        </div>
+
+        <div class="stat-card-dash">
+          <div class="label">Field Crews On-Site</div>
+          <div class="val">184</div>
+          <div class="sub">Across 4 regional Indian corridors</div>
+        </div>
+
+        <div class="stat-card-dash">
+          <div class="label">Under Contract (Total)</div>
+          <div class="val">₹1,520 Cr</div>
+          <div class="sub">&#8593; 14% YoY portfolio growth</div>
+        </div>
+
+        <div class="stat-card-dash">
+          <div class="label">Safety Benchmark</div>
+          <div class="val" style="color: #2e7d32;">0.00</div>
+          <div class="sub">Zero lost-time incidents (2.5M hrs)</div>
+        </div>
+      </div>
+
+      <!-- Master Projects Grid (Protected against overflow at 320px) -->
+      <div class="dash-main-grid">
+        <!-- Left: Master Jobsite Table -->
+        <div>
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <div>
+                <span class="section-tag" style="margin-bottom: 0.25rem;">Active Indian Jobsites</span>
+                <h3 class="dash-panel-title">Master Project Telemetry &amp; Status</h3>
+              </div>
+              <a href="404.html" class="btn btn-secondary btn-sm redirect-404">Export CSV</a>
+            </div>
+
+            <!-- Horizontal Scroll Containment for Table -->
+            <div class="data-table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Project Name &amp; Code</th>
+                    <th>Typology</th>
+                    <th>Superintendent</th>
+                    <th>Completion</th>
+                    <th>Budget</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong>The Obsidian Pavilion</strong><br>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">#SK-8821 | Bandra West, Mumbai</span>
+                    </td>
+                    <td>Residential</td>
+                    <td>M. Varma</td>
+                    <td>
+                      <strong>78%</strong>
+                      <div class="progress-bar-wrap" style="height: 6px; margin: 4px 0 0;">
+                        <div class="progress-bar-fill" style="width: 78%;" data-target-width="78%"></div>
+                      </div>
+                    </td>
+                    <td>₹35.5 Cr</td>
+                    <td><span class="badge-tag badge-green">Framing</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Stone Ridge Residence</strong><br>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">#SK-8819 | Jubilee Hills, Hyderabad</span>
+                    </td>
+                    <td>Residential</td>
+                    <td>J. Mehta</td>
+                    <td>
+                      <strong>92%</strong>
+                      <div class="progress-bar-wrap" style="height: 6px; margin: 4px 0 0;">
+                        <div class="progress-bar-fill" style="width: 92%;" data-target-width="92%"></div>
+                      </div>
+                    </td>
+                    <td>₹68.0 Cr</td>
+                    <td><span class="badge-tag badge-gold">Finishes</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Vertex Commercial Center</strong><br>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">#SK-7740 | Cyber City, Gurugram</span>
+                    </td>
+                    <td>Commercial</td>
+                    <td>C. Deshmukh</td>
+                    <td>
+                      <strong>45%</strong>
+                      <div class="progress-bar-wrap" style="height: 6px; margin: 4px 0 0;">
+                        <div class="progress-bar-fill" style="width: 45%;" data-target-width="45%"></div>
+                      </div>
+                    </td>
+                    <td>₹1,020 Cr</td>
+                    <td><span class="badge-tag badge-blue">Superstructure</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>The Foundry Works</strong><br>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">#SK-6628 | Indiranagar, Bengaluru</span>
+                    </td>
+                    <td>Restoration</td>
+                    <td>A. Roy</td>
+                    <td>
+                      <strong>20%</strong>
+                      <div class="progress-bar-wrap" style="height: 6px; margin: 4px 0 0;">
+                        <div class="progress-bar-fill" style="width: 20%;" data-target-width="20%"></div>
+                      </div>
+                    </td>
+                    <td>₹235 Cr</td>
+                    <td><span class="badge-tag badge-green">Shoring</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <strong>Monolith Art Pavilion</strong><br>
+                      <span style="font-size: 0.75rem; color: var(--text-muted);">#SK-5512 | HITEC City, Hyderabad</span>
+                    </td>
+                    <td>Cultural</td>
+                    <td>E. Roy</td>
+                    <td>
+                      <strong>10%</strong>
+                      <div class="progress-bar-wrap" style="height: 6px; margin: 4px 0 0;">
+                        <div class="progress-bar-fill" style="width: 10%;" data-target-width="10%"></div>
+                      </div>
+                    </td>
+                    <td>₹145 Cr</td>
+                    <td><span class="badge-tag badge-blue">Foundation Pour</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Heavy Machinery & Crane Deployment -->
+          <div class="dash-panel">
+            <div class="dash-panel-header">
+              <h3 class="dash-panel-title">Heavy Equipment &amp; Fleet Logistics</h3>
+              <span class="badge-tag badge-green">Fleet 100% Operational</span>
+            </div>
+
+            <div class="cards-grid-3" style="gap: 1rem;">
+              <div style="border: 1px solid var(--border-light); padding: 1.15rem; border-radius: 4px;">
+                <div style="font-size: 0.725rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700;">Tower Crane #01</div>
+                <div style="font-weight: 800; font-size: 1.05rem; margin: 4px 0;">Liebherr 280 EC-H</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted);">Deployed at Vertex Tower (Gurugram)</div>
+                <div style="font-size: 0.75rem; color: #2e7d32; margin-top: 4px;">&#10003; Inspected Nov 2026</div>
+              </div>
+
+              <div style="border: 1px solid var(--border-light); padding: 1.15rem; border-radius: 4px;">
+                <div style="font-size: 0.725rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700;">Concrete Pumper #04</div>
+                <div style="font-weight: 800; font-size: 1.05rem; margin: 4px 0;">Putzmeister 47M Boom</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted);">Assigned to Monolith (Hyderabad)</div>
+                <div style="font-size: 0.75rem; color: #2e7d32; margin-top: 4px;">&#10003; Inspected Nov 2026</div>
+              </div>
+
+              <div style="border: 1px solid var(--border-light); padding: 1.15rem; border-radius: 4px;">
+                <div style="font-size: 0.725rem; text-transform: uppercase; color: var(--color-accent); font-weight: 700;">Spider Crane #02</div>
+                <div style="font-weight: 800; font-size: 1.05rem; margin: 4px 0;">Maeda Mini MC405</div>
+                <div style="font-size: 0.8125rem; color: var(--text-muted);">Active at Obsidian (Mumbai)</div>
+                <div style="font-size: 0.75rem; color: #2e7d32; margin-top: 4px;">&#10003; Inspected Nov 2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Admin Operations & Quick Controls (Wrapped buttons to avoid clipping on mobile) -->
+        <div>
+          <!-- Admin Controls -->
+          <div class="dash-panel">
+            <h3 class="dash-panel-title" style="margin-bottom: 1.25rem;">Superintendent Dispatch</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <a href="404.html" class="btn btn-primary btn-block redirect-404">Dispatch Drone Topo Scan</a>
+              <a href="404.html" class="btn btn-secondary btn-block redirect-404">Approve Subcontractor Draws</a>
+              <a href="404.html" class="btn btn-secondary btn-block redirect-404">Broadcast Jobsite Weather Alert</a>
+              <a href="404.html" class="btn btn-secondary btn-block redirect-404">Schedule Municipal Inspector</a>
+            </div>
+          </div>
+
+          <!-- Live Safety Audit Feed -->
+          <div class="dash-panel">
+            <h3 class="dash-panel-title" style="margin-bottom: 1rem;">Daily Jobsite Safety Logs</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="font-size: 0.8125rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-light);">
+                <strong>07:00 AM — Morning Toolbox Briefing</strong>
+                <p style="color: var(--text-muted);">Cyber City: 42 ironworkers briefed on 100% tie-off harness checks. Zero violations.</p>
+              </li>
+              <li style="font-size: 0.8125rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-light);">
+                <strong>09:30 AM — Concrete Cube Strength Certification</strong>
+                <p style="color: var(--text-muted);">Monolith Pavilion: 7-day compressive break verified at 38.5 N/mm² (Target: 35 N/mm²).</p>
+              </li>
+              <li style="font-size: 0.8125rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-light);">
+                <strong>11:15 AM — Shoring Deflection Verification</strong>
+                <p style="color: var(--text-muted);">The Foundry Works: Laser tiltmeters report 0.002 mm movement. Structure stabilized.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Material Inventory Status -->
+          <div class="dash-panel">
+            <h3 class="dash-panel-title" style="margin-bottom: 1rem;">Critical Batching Orders</h3>
+            <div style="font-size: 0.875rem;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>UltraTech Low-Carbon Cement:</span>
+                <strong>1,200 Tons (Stocked)</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span>Tata Tiscon Fe500D Rebar:</span>
+                <strong>480 Tons (On-Site)</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>Seasoned Teak Trusses:</span>
+                <strong style="color: #2e7d32;">Delivery On Schedule</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+          <img src="images/logo-white.webp" alt="Stackly Logo" class="brand-logo-img">
+          <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+        </a>
+          <p class="footer-desc">
+            Stackly is India’s premier design-build architectural construction studio. We engineer and build luxury residences, commercial towers, and cultural spaces with precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Capabilities</div>
+          <ul class="footer-links">
+            <li><a href="404.html">General Contracting</a></li>
+            <li><a href="404.html">Structural Engineering</a></li>
+            <li><a href="404.html">Architectural Concrete</a></li>
+            <li><a href="404.html">Historic Preservation</a></li>
+            <li><a href="404.html">BIM Modeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="footer-heading">India Headquarters</div>
+          <p>450 Maker Maxity, Bandra-Kurla Complex (BKC), Mumbai - 400051</p>
+          <p>Tel: <a href="404.html">+91 (022) 6940 7800</a></p>
+          <p>Email: <a href="404.html">studio@stacklybuild.in</a></p>
+          <div style="margin-top: 1.25rem;">
+            <a href="login.html" class="btn btn-outline-light btn-sm">Client &amp; Admin Portal &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Construction &amp; Architecture India. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">NBC 2016 Compliant</a>
+          <a href="404.html">IGBC Platinum</a>
+          <a href="404.html">RERA Registered</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

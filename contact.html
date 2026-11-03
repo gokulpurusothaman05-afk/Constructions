@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly</title>
+  <link rel="icon" type="image/webp" href="images/logo-white.webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Universal Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo-black.webp" alt="Stackly Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-primary btn-sm">Portal Login</a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="login.html" class="btn btn-primary btn-block">Client / Admin Portal</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: Contact Hero -->
+    <section class="section hero-editorial" id="contact-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag animate-hero-tag">Get In Touch &bull; India</span>
+          <h1 class="animate-hero-title">Have a site, a blueprint, or an idea? Let's build.</h1>
+          <p class="hero-subtitle animate-hero-subtitle">
+            Whether you are planning a ground-up residential villa or preparing a commercial RFP in Mumbai, Gurugram, or Bengaluru, our construction directors are available for site walkthroughs.
+          </p>
+          <div class="hero-actions animate-hero-actions">
+            <a href="#consultation-form" class="btn btn-primary">Submit Project Inquiry</a>
+            <a href="login.html" class="btn btn-secondary">Access Client Portal</a>
+          </div>
+          <div class="hero-stats-bar animate-hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">&lt; 24h</div>
+              <div class="stat-label">Inquiry Response Time</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Regional Indian Hubs</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Confidential Review</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-hero-visual">
+          <div class="hero-image-wrap">
+            <img src="images/office-building.webp" alt="Stackly Architecture and Construction Studio Headquarters Mumbai">
+          </div>
+          <div class="hero-badge-float">
+            <span class="badge-title">India Headquarters</span>
+            <span class="badge-detail">BKC, Bandra East, Mumbai - 400051</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Detailed Consultation Form (Clean Responsive Alignment) -->
+    <section class="section section-stone" id="consultation-form">
+      <div class="container">
+        <div class="section-header reveal" style="text-align: center; max-width: 680px; margin-left: auto; margin-right: auto;">
+          <span class="section-tag">Project Evaluation</span>
+          <h2 class="section-title">Schedule a Consultation With Our Master Builders</h2>
+          <p class="section-desc">Fill out your project specifications below to connect directly with our engineering team.</p>
+        </div>
+
+        <!-- Form with responsive wrapper class -->
+        <div class="form-card-wrapper reveal">
+          <form action="404.html" method="GET">
+            <div class="cards-grid-2" style="gap: 1.25rem;">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" name="full_name" class="form-control" placeholder="e.g. Kavita Singhania" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address (Gmail preferred)</label>
+                <input type="email" name="email" class="form-control" placeholder="user@gmail.com" required>
+              </div>
+            </div>
+
+            <div class="cards-grid-2" style="gap: 1.25rem;">
+              <div class="form-group">
+                <label class="form-label">Mobile Number</label>
+                <input type="tel" name="phone" class="form-control" placeholder="+91 98200 00000" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Project Typology</label>
+                <select name="project_type" class="form-control" required>
+                  <option value="">Select Category</option>
+                  <option value="residential">Custom Residential Villa / Farmhouse</option>
+                  <option value="commercial">Commercial Tower / IT Park</option>
+                  <option value="restoration">Heritage Structural Retrofit</option>
+                  <option value="interior">Luxury Architectural Millwork</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="cards-grid-2" style="gap: 1.25rem;">
+              <div class="form-group">
+                <label class="form-label">Project Location (City / State)</label>
+                <input type="text" name="location" class="form-control" placeholder="e.g. Alibaug, Maharashtra" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Estimated Construction Budget (INR)</label>
+                <select name="budget" class="form-control" required>
+                  <option value="">Select Budget Range</option>
+                  <option value="5cr-15cr">₹5 Crore – ₹15 Crore</option>
+                  <option value="15cr-50cr">₹15 Crore – ₹50 Crore</option>
+                  <option value="50cr+">₹50 Crore – ₹250+ Crore</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Project Scope &amp; Site Details</label>
+              <textarea name="message" class="form-control" placeholder="Describe the plot size, current status of architectural drawings, desired groundbreaking schedule, etc." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Transmit Consultation Request</button>
+            <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">
+              *All drawings, site locations, and budgets submitted are protected under bilateral non-disclosure agreements.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Studio & Construction Headquarters -->
+    <section class="section" id="headquarters">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Direct Lines</span>
+          <h2 class="section-title">Visit our Mumbai design studio &amp; fabrication yard.</h2>
+          <p class="section-desc">We welcome architects, structural engineers, and clients for material selection and mock-up reviews.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card reveal stagger-1">
+            <div class="card-num">HQ 01</div>
+            <h3>Main Mumbai Studio</h3>
+            <p style="margin-bottom: 1rem;">450 Maker Maxity, Bandra-Kurla Complex (BKC)<br>Mumbai, Maharashtra - 400051</p>
+            <p><strong>Hours:</strong> Mon – Fri, 8:00 AM – 7:00 PM</p>
+            <p><strong>Tel:</strong> +91 (022) 6940 7800</p>
+          </div>
+
+          <div class="feature-card reveal stagger-2">
+            <div class="card-num">HQ 02</div>
+            <h3>Heavy Fabrication Staging Yard</h3>
+            <p style="margin-bottom: 1rem;">Plot 84, MIDC Industrial Area, Taloja<br>Navi Mumbai, Maharashtra - 410208</p>
+            <p><strong>Focus:</strong> Primary steel fabrication, mass timber prep, and pre-cast concrete cube tests.</p>
+          </div>
+
+          <div class="feature-card reveal stagger-3">
+            <div class="card-num">HQ 03</div>
+            <h3>Direct Inquiries</h3>
+            <p style="margin-bottom: 1rem;">Direct communication channels for new project briefs and commercial RFPs:</p>
+            <p><strong>General:</strong> info@stacklybuild.in</p>
+            <p><strong>Bidding / RFPs:</strong> estimating@stacklybuild.in</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Regional Hubs & Dispatch Yards -->
+    <section class="section section-dark" id="regional-hubs">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Regional Dispatch</span>
+          <h2 class="section-title" style="color: #ffffff;">Strategic field offices stationed near primary build corridors.</h2>
+          <p class="section-desc">Ensuring superintendents and rapid-response safety personnel are within 60 minutes of every jobsite.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card reveal stagger-1" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">Western Hub</div>
+            <h3 style="color: #fff;">Mumbai, Alibaug &amp; Goa</h3>
+            <p style="color: var(--text-light-muted);">Dedicated to coastal foundations, corrosive salt-environment marine concrete, and hillside shoring.</p>
+          </div>
+          <div class="feature-card reveal stagger-2" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">Northern Hub</div>
+            <h3 style="color: #fff;">Delhi NCR &amp; Chandigarh</h3>
+            <p style="color: var(--text-light-muted);">Expertise in deep basement shoring, extreme temperature swings, and thermal envelope integrity.</p>
+          </div>
+          <div class="feature-card reveal stagger-3" style="background: var(--bg-dark-card); border-color: var(--border-dark); color: #fff;">
+            <div class="card-num">Southern Hub</div>
+            <h3 style="color: #fff;">Bengaluru &amp; Hyderabad</h3>
+            <p style="color: var(--text-light-muted);">Large-span post-tensioned IT complexes, campus infrastructure, and green building certifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Subcontractor & Trade Partner Channel -->
+    <section class="section" id="subcontractors">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="section-tag">Guild Partnerships</span>
+          <h2 class="section-title">Trade Contractors, Suppliers &amp; Indian Artisans</h2>
+          <p class="section-desc">
+            Stackly maintains high craftsmanship and safety standards. We actively partner with licensed structural subcontractors, MEP specialists, and stone artisans.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <p style="font-size: 0.9375rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+              Requirements: Valid GST &amp; contractor registration, OSHA 10/30 certified staff, minimum ₹15 Crore general liability coverage, and proven portfolio of architectural tolerances.
+            </p>
+            <a href="404.html" class="btn btn-secondary">Subcontractor Prequalification Portal &rarr;</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal stagger-1">
+          <div class="hero-image-wrap">
+            <img src="images/cta-construction.webp" alt="Stackly Trade Contractor Guild India">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: 24/7 Client Emergency & Superintendent Hotline -->
+    <section class="section section-stone" id="emergency-support">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Jobsite Response</span>
+          <h2 class="section-title">24/7 Active Site Incident &amp; Monsoon Contingency Hotline</h2>
+          <p class="section-desc">All active Stackly construction sites are monitored around the clock by automated environmental sensors and dedicated on-call superintendents.</p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card reveal stagger-1">
+            <div class="card-num">Alert 01</div>
+            <h3>Monsoon Flood Dispatch</h3>
+            <p>Automated high-capacity dewatering pumps and site stabilization crews deployed during heavy monsoon downpours.</p>
+          </div>
+          <div class="feature-card reveal stagger-2">
+            <div class="card-num">Alert 02</div>
+            <h3>Structural Sensor Feeds</h3>
+            <p>Real-time tiltmeter and vibration alerts routed to our on-duty structural engineer for instant verification.</p>
+          </div>
+          <div class="feature-card reveal stagger-3">
+            <div class="card-num">Alert 03</div>
+            <h3>Client Concierge</h3>
+            <p>Active project owners can access their dedicated superintendent 24/7 via the Stackly Client Portal dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Construction FAQ Accordion -->
+    <section class="section" id="faqs">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Clarity on our process, costs, and project milestones in India.</h2>
+          <p class="section-desc">Common questions answered for property developers and homeowners.</p>
+        </div>
+
+        <div class="cards-grid-2" style="gap: 1.75rem;">
+          <div class="feature-card reveal stagger-1">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">How does Stackly handle cost overruns in India?</h3>
+            <p>We operate primarily on guaranteed maximum price (GMP) contracts backed by comprehensive 3D BIM modeling. By resolving spatial clashes digitally before site execution, change orders are virtually eliminated.</p>
+          </div>
+
+          <div class="feature-card reveal stagger-2">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can Stackly build from existing architect plans?</h3>
+            <p>Yes. Approximately 60% of our projects are designed by outside architectural studios. We collaborate seamlessly as the general contractor to execute their vision with uncompromising fidelity.</p>
+          </div>
+
+          <div class="feature-card reveal stagger-3">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">How do clients track daily site progress?</h3>
+            <p>Every client receives secure login credentials to the Stackly Client Portal, featuring live HD jobsite camera streams, daily progress logs, 3D drone scans, and budget burn charts in INR.</p>
+          </div>
+
+          <div class="feature-card reveal stagger-4">
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">What warranties are provided upon handover?</h3>
+            <p>Stackly provides an industry-leading 10-year structural warranty on all foundation and framing assemblies, alongside a 2-year comprehensive waterproofing and finish warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+          <img src="images/logo-white.webp" alt="Stackly Logo" class="brand-logo-img">
+          <span class="brand-logo-text">Stackly<span class="brand-logo-dot">.</span></span>
+        </a>
+          <p class="footer-desc">
+            Stackly is India’s premier design-build architectural construction studio. We engineer and build luxury residences, commercial towers, and cultural spaces with precision.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-heading">Capabilities</div>
+          <ul class="footer-links">
+            <li><a href="404.html">General Contracting</a></li>
+            <li><a href="404.html">Structural Engineering</a></li>
+            <li><a href="404.html">Architectural Concrete</a></li>
+            <li><a href="404.html">Historic Preservation</a></li>
+            <li><a href="404.html">BIM Modeling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <div class="footer-heading">India Headquarters</div>
+          <p>450 Maker Maxity, Bandra-Kurla Complex (BKC), Mumbai - 400051</p>
+          <p>Tel: <a href="404.html">+91 (022) 6940 7800</a></p>
+          <p>Email: <a href="404.html">studio@stacklybuild.in</a></p>
+          <div style="margin-top: 1.25rem;">
+            <a href="login.html" class="btn btn-outline-light btn-sm">Client &amp; Admin Portal &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Stackly Construction &amp; Architecture India. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">NBC 2016 Compliant</a>
+          <a href="404.html">IGBC Platinum</a>
+          <a href="404.html">RERA Registered</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
